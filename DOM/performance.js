@@ -65,5 +65,49 @@ If the stack takes up more space than it was assigned, a "stack overflow" error 
 //EVENT LOOPS
 
 /*
+so to understand this we have to take three things 
+
+1st one is call stack
+2nd one is broswer
+3rd one is event queue
+
+lets say we have this code 
+console.log("ABCD")
+element.addeventlistner('click', function(){
+ console.log(1234);
+})
+
+console.log('xyz')
+
+
+explaination:-
+
+as u can see this code so first of all the first line of code 
+will go into the call stack and after executing that code of line
+successfully it will be removed from the call stack then next function
+will be called means 2nd function that is addeventlistner
+so lets say we dont click the mouse this means event will not happen
+right and if event didnt happen than funtion will not get executed right
+so call stack will give this entire fucntion to the browser and will say
+please execute this function whenever that event happen understand
+after that next 3rd command will be executed and now stack is all empty
+now when we click the mouse and event will happen the whole 
+function will move on to event queue and event queue will check if the call
+stack is empty or not if it is empty it will execute the function and done
+
+this is known as event loop.
+
+
+note:- u can also use loupe tool to understand how this works
+
+*/
+
+//SETTIMEOUT METHOD
+/*
+The global setTimeout() method sets a timer 
+which executes a function or specified piece 
+of code once the timer expires.
+
+time will be in millisecond
 
 */
