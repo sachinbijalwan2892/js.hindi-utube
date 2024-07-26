@@ -1,0 +1,52 @@
+Asynchronous code 
+
+Asynchronous code runs in event loop only.
+
+API 
+
+application programming interface
+
+So in order to understand what API is lets take one example 
+
+lets say we made a weather app in which when u will give a 
+name of particular state u will get the temperature and weather updates of 
+that particular state. Now lets get behind th scene how we are getting all that information
+actually there is a server which is carrying this whole weather information
+we are requesting the API to get this info for us and API is requesting the server
+for this information so in this way API works it acts as interface between user and server 
+we can kind of say that 
+
+
+Features of Asynch code
+1. Clean and concise
+2. better error handling
+3. Easier debugging
+
+
+PROMISE IN JAVASCRIPT
+
+whenever u want to run some function parllely in the background 
+u can use the promise
+asynch code 
+
+
+u can explicitly resolve or reject the promise
+
+
+whenever u want to write asynch code use promise 
+
+A Promise is in one of these states:
+
+1. pending: initial state, neither fulfilled nor rejected.
+2. fulfilled: meaning that the operation was completed successfully.
+3. rejected: meaning that the operation failed.
+
+we can use two methods on promise 
+1. then(); u can use it once your one promise is done and next u want to tell what to do next 
+2. catch(); u can use catch to handle the errors
+
+
+//Asynch await
+
+if u want to execute one promise first then use await 
+then until ur first promise is done 2nd is not going to execute
